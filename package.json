@@ -1,0 +1,38 @@
+{
+  "name": "game-stack-zeus",
+  "version": "0.1.0",
+  "description": "Server administrator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hylium/game-stack-prometheus.git"
+  },
+  "author": {
+    "name": "Benjamin Delamarre",
+    "url": "d34thwings@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hylium/game-stack-prometheus/issues"
+  },
+  "homepage": "https://github.com/hylium/game-stack-prometheus",
+  "dependencies": {
+    "game-stack-object": "git+https://github.com/hylium/game-stack-object.git",
+    "lodash": "^2.4.1",
+    "q": "^1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.3.1"
+  },
+  "gitHead": "0fe42da080e2660553a5d00e08be44b0584d4d67",
+  "readme": "#Prometheus\r\n\r\nPrometheus is a plugin for GameStack that handles connexion to one ore more databases.\r\n",
+  "readmeFilename": "README.md",
+  "_id": "game-stack-prometheus@0.1.0",
+  "_shasum": "52fe984046fd98fee4f4c4df7d4a3655e8b38f21",
+  "_from": "..\\..\\..\\BDELAM~1\\AppData\\Local\\Temp\\npm-8888-444adb93\\git-cache-e819a7f5c05d\\0fe42da080e2660553a5d00e08be44b0584d4d67",
+  "_resolved": "git+https://github.com/hylium/game-stack-prometheus.git#0fe42da080e2660553a5d00e08be44b0584d4d67"
+}
