@@ -1,3 +1,3 @@
-#Prometheus
+#Zeus
 
-Prometheus is a plugin for GameStack that handles connexion to one ore more databases.
+Zeus is a plugin for GameStack that provides an administrator interface for the server.
