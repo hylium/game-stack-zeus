@@ -1,2 +1,20 @@
 <h1 class="page-header">{{title}}</h1>
+<div class="well well-sm">
+  <i class="pull-right">Up for : <span id="server-timer"></span></i>
+  <b>Server running since : </b>{{data.startTime}}
+</div>
+<script>
+  var startTime = new Date('{{data.startTime}}');
+  document.addEventListener("DOMContentLoaded", function() {
+    setInterval(function() {
+      var runtime = (Date.now() - startTime.getTime()) / 1000;
+      var days = Math.floor(runtime / 86400), hours = Math.floor((runtime % 86400) / 3600),
+        minutes = Math.floor(((runtime % 86400) % 3600) / 60),
+        seconds = Math.floor(((runtime % 86400) % 3600) % 60);
+      $('#server-timer').text([[days, 'd '], [hours, 'h '], [minutes, 'm '], [seconds, 's']].reduce(function(str, partial) {
+        return str + (partial[0] === 0 ? '' : partial[0] + partial[1]);
+      }, ''));
+    });
+  });
+</script>
 {{{widgets}}}
